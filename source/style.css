@@ -1,0 +1,96 @@
+body {
+  background-color: #f2ead3;
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+}
+.main-container {
+  background-color: #f9f5f0;
+  color: #344f1f;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #344f1f;
+  border-radius: 12px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+  position: flex;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+.search-input-bar {
+  color: #344f1f;
+  background-color: #f2ead3;
+  border: 1px solid #f2ead3;
+  border-radius: 4px;
+  margin: 0px 10px;
+  padding: 10px 400px 10px 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.search-input-button {
+  color: #344f1f;
+  text-align: center;
+  background-color: #f2ead3;
+  border: 1px solid #f2ead3;
+  border-radius: 4px;
+  margin: 0px 10px;
+  padding: 10px 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+section {
+  display: flex;
+  flex-direction: row;
+}
+.current-temp {
+  font-size: 60px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.city-and-stats {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  text-align: right;
+}
+.city {
+  font-size: 55px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.stats {
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+.days-container {
+  display: flexbox;
+}
+.days-row {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.day {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 35px;
+}
+.day-text {
+  font-weight: 300;
+  color: rgba(52, 79, 31, 0.7);
+}
+footer {
+  color: rgba(52, 79, 31, 0.7);
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 5px 10px 5px;
+}
