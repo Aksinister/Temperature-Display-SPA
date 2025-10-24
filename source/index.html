@@ -13,12 +13,13 @@
   <body>
     <div class="main-container">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="search-input-bar"
+            id="search-input-bar"
           />
           <input type="submit" value="search" class="search-input-button" />
         </form>
@@ -26,7 +27,7 @@
       <main>
         <section class="temp-city-and-stats">
           <span class="current-temp">30°C</span>
-          <span class="city">in Brisbane</span>
+          <span class="city">in <span id="city-item">Brisbane</span></span>
           <span class="emoji">☀️</span>
           <span class="stats">
             Monday 10:10, clear skies <br />
@@ -79,5 +80,6 @@
         >
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
