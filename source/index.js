@@ -19,8 +19,9 @@ function updateWeatherStats(response) {
   let humidityItem = document.querySelector("#humidity");
   let windSpeedItem = document.querySelector("#wind-speed");
   let timeItem = document.querySelector(`#time`);
+  let emojiItem = document.querySelector("#emoji");
 
-  console.log(new Date(response.data.time * 1000));
+  console.log(response.data);
   let date = new Date(response.data.time * 1000);
 
   temperatureItem.innerHTML = Math.round(temp);
@@ -29,6 +30,7 @@ function updateWeatherStats(response) {
   humidityItem.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedItem.innerHTML = `${response.data.wind.speed}km p/h`;
   timeItem.innerHTML = formatDate(date);
+  emojiItem.innerHTML = `<img src="${response.data.condition.icon_url}"/>`;
 
   function formatDate(date) {
     let days = [
